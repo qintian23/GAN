@@ -1921,8 +1921,8 @@ vignettes/*.pdf
 /cache/
 
 # Temporary files created by R markdown
-*.utf8.md
-*.knit.md
+#*.utf8.md
+#*.knit.md
 
 # R Environment Variables
 .Renviron
@@ -5360,7 +5360,7 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
-fastlane/readme.md
+#fastlane/readme.md
 
 # Version control
 vcs.xml
@@ -5492,14 +5492,14 @@ ExportedObj/
 *.booproj
 *.svd
 *.pdb
-*.mdb
+#*.mdb
 *.opendb
 *.VC.db
 
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
-*.mdb.meta
+#*.mdb.meta
 
 # Unity3D generated file on crash reports
 sysinfo.txt
