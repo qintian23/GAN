@@ -1,7 +1,6 @@
 import tensorflow as tf
 from tensorflow import keras
-# from tensorflow.keras import layers
-from tensorflow.python.keras import layers
+from tensorflow.keras import layers # 不影响运行，只是路径的问题
 
 class Generator(keras.Model):
     # 生成器网络
