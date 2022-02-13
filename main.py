@@ -187,11 +187,12 @@ def main():
 
         if epoch % 100 == 0:
             viz.line([[loss_D.item(), loss_G.item()]], [epoch], win='loss', update='append')
-
-            # generate_image(D, G, xr, epoch) # xr有问题
+            """
+            generate_image(D, G, xr, epoch) 
+            上述写法：TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu()...。修改如下
+            """
+            generate_image(D, G, xr.cpu(), epoch)
             print(loss_D.item(), loss_G.item())
-
-
 
 
 if __name__ == '__main__':
