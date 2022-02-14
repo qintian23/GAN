@@ -3,13 +3,12 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import numpy as np
 import tensorflow as tf
-from tensorflow import keras
 
 from PIL import Image
 import glob
-from gan import Generator, Discriminator
+from wgan.gan import Generator, Discriminator
 
-from dataset import make_anime_dataset
+from wgan.dataset import make_anime_dataset
 
 
 def save_result(val_out, val_block_size, image_path, color_mode):
